@@ -1,0 +1,395 @@
+.vertical-nav {
+  min-width: 20rem;
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background-color: #f6505ede;
+}
+
+.page-content {
+  width: calc(100% - 20rem);
+  margin-left: 20rem;
+  transition: all 0.4s;
+}
+h4 {
+  color: rgba(255, 209, 67, 0.74);
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+li {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+.text-uppercase {
+  font-size: 10px;
+}
+#greetingText {
+  font-size: 8px;
+}
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -20rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -20rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 20rem;
+    width: calc(100% - 20rem);
+  }
+}
+
+body {
+  background: #f8f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.separator {
+  margin: 50px;
+}
+
+.form-control {
+  height: 20px;
+  width: 50vw;
+  background-color: #eeeeee69;
+}
+.navbar-vertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--Slate-300, #cbd5e1);
+  background: #fff;
+}
+.settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.div-upper-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  height: fit-content;
+}
+.separator-two {
+  margin: 30px;
+}
+.new-client {
+  font-family: Inter;
+  padding-top: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+  border-radius: 3px;
+  border-color: #e91868;
+  background: var(--Accent, #e91868);
+}
+.greeting-button-div {
+  padding-top: 25px;
+}
+.form {
+  position: relative;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  color: #9ca3af;
+}
+.svg-box {
+  padding-top: 10px;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 38px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchInput {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 0px;
+  padding: 0px 4px;
+}
+.searchInput input {
+  border: 1px solid #e5e5e5;
+  border-radius: 50px;
+  margin-left: 8px;
+  height: 34px;
+  width: 100%;
+  padding: 0px 25px 0px 10px;
+  transition: all 0.6s ease;
+}
+.searchInput label {
+  color: #767676;
+  font-weight: normal;
+}
+.searchInput input:placeholder-shown {
+  width: 13%;
+}
+.searchInput:hover input:placeholder-shown {
+  width: 100%;
+  cursor: pointer;
+}
+.searchInput:after {
+  font-family: "FontAwesome";
+  color: #d4d4d4;
+  position: relative;
+  content: "\f002";
+  right: 25px;
+}
+.add_flex {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0px;
+}
+.view {
+  border: 1px solid #00b087;
+  background: rgba(22, 192, 152, 0.38);
+}
+.view2 {
+  border: 1px solid #f6505e;
+  background: rgba(246, 80, 94, 0.87);
+}
+#filtertable th {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600px;
+  font-family: Inter;
+}
+
+#filtertable td:nth-child(1),
+#filtertable td:nth-child(2),
+#filtertable td:nth-child(3) {
+  text-align: center;
+  vertical-align: middle;
+  border-width: 1px;
+  color: gray;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 29.9px */
+}
+/* Style for the previous page button */
+.prev-page-button {
+  background-color: #337ab7;
+  color: #fff;
+  font-size: 12px;
+  height: fit-content;
+}
+
+/* Style for the next page button */
+.next-page-button {
+  background-color: #337ab7;
+  color: #fff;
+  font-size: 12px;
+  height: fit-content;
+}
+
+/* Style for the page info */
+#pageInfo {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Align the content to the right within the pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Form styles */
+.client-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none; /* Initially hidden */
+}
+
+.client-form h3 {
+  color: black;
+}
+
+.client-form label {
+  display: block;
+  color: black;
+  margin-top: 10px;
+}
+
+.client-form input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: #f6505ede;
+}
+
+.client-form input[type="radio"] {
+  margin-right: 5px;
+  color: black;
+}
+
+.client-form button {
+  background-color: #f6505ede;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Show the form when the button is clicked */
+.show-form {
+  display: block;
+}
+/* Overlay to darken the background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+#clientDialog {
+  z-index: 1000;
+}
+
+.overlay {
+  z-index: 999;
+}
+
+/* Dialog container styles */
+.dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6505ede;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  width: 500px;
+}
+
+.dialog-content {
+  text-align: left;
+}
+
+.dialog h3 {
+  color: black;
+}
+.radio-container {
+  display: inline-flex;
+}
+
+/* Style the radio buttons */
+.radio-container input[type="radio"] {
+  margin-right: 10px;
+  display: inline;
+}
+
+/* Style the labels */
+.radio-container label {
+  display: inline;
+  margin-right: 15px;
+}
+.log-out-container {
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+}
+
+#log-out {
+  color: #558ec3;
+  background-color: white;
+  border-color: white;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
