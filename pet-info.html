@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pet</title>
+    <title>Pet Information</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -388,165 +388,501 @@
           </div>
         </div>
       </div>
-      <!--End of navbar horizontal-->
+
       <div id="pageOverlay" class="overlay"></div>
       <div class="separator"></div>
-      <div class="separator"></div>
+      <div class="title-name">
+        <h5>Owner Name/</h5>
+        <h3>Meyli</h3>
+      </div>
       <div class="bg-white p-3 rounded shadow-sm" style="flex-grow: 1">
-        <div class="for-two-table">
-          <div class="table-1">
-            <table class="custom-table">
-              <thead>
-                <tr class="header-row">
-                  <th style="font-size: 13px; padding: 14px">
-                    Contact Information
-                  </th>
-                  <th class="icon-header" style="padding-left: 3px">
-                    <div class="button-container">
-                      <button class="editClientInfo">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="1.2em"
-                          viewBox="0 0 512 512"
-                          fill="#f6505ede"
-                        >
-                          <path
-                            d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"
-                          />
-                        </svg>
-                      </button>
-                      <button
-                        class="downloadTableButton"
-                        onclick="downloadTableAsDoc()"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="1.2em"
-                          viewBox="0 0 512 512"
-                          fill="#f6505ede"
-                        >
-                          <path
-                            d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-            </table>
-            <table class="custom-table">
+        <table class="custom-table">
+          <thead>
+            <tr class="header-row">
+              <th style="font-size: 15px; padding: 14px">PET INFORMATION</th>
+              <th class="icon-header" style="padding-left: 3px">
+                <div class="button-container">
+                  <button class="editClientInfo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1.2em"
+                      viewBox="0 0 512 512"
+                      fill="#f6505ede"
+                    >
+                      <path
+                        d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="downloadPetInfo"
+                    onclick="downloadTableAsDoc()"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1.2em"
+                      viewBox="0 0 512 512"
+                      fill="#f6505ede"
+                    >
+                      <path
+                        d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+        </table>
+        <div class="separator2"></div>
+        <div class="main-div-of-3div">
+          <div class="image-container">
+            <img
+              src="https://media.istockphoto.com/id/1580439473/photo/three-weeks-old-pembroke-welsh-corgi-puppy.webp?b=1&s=170667a&w=0&k=20&c=7vpCYP89za4_iZC9y5wSbG0T0rRPDnTPUkdlBY4Sn2o="
+              alt="pet"
+              width="205px"
+              height="156px"
+              id="uploaded-image"
+            />
+            <div class="browse-div">
+              <input type="file" id="file-input" style="display: none" />
+              <button class="browse" id="browse" onclick="browseImage()">
+                Browse Image
+              </button>
+              <label id="label" style="display: none">No file selected</label>
+            </div>
+            <button
+              type="button"
+              class="update-image btn-primary btn-lg gradient"
+              id="upload"
+              onclick="uploadImage()"
+            >
+              Upload
+            </button>
+          </div>
+          <div class="div-one">
+            <table class="custom-table edit-table">
               <tbody>
                 <tr>
-                  <td>ID:</td>
-                  <td>001</td>
+                  <td>Pet Name:</td>
+                  <td contenteditable="false">Meyli</td>
                 </tr>
                 <tr>
-                  <td>Name:</td>
-                  <td>Jean</td>
+                  <td>Species:</td>
+                  <td contenteditable="false">Thai Bangkaew</td>
                 </tr>
                 <tr>
                   <td>Gender:</td>
-                  <td>Female</td>
+                  <td contenteditable="false">Female</td>
                 </tr>
                 <tr>
-                  <td>Address:</td>
-                  <td>Daet</td>
+                  <td>Date of Birth</td>
+                  <td contenteditable="false">August 9, 2019</td>
                 </tr>
                 <tr>
-                  <td>Email:</td>
-                  <td>dsa@Jean</td>
-                </tr>
-                <tr>
-                  <td>Phone #:</td>
-                  <td>024516556</td>
+                  <td>Age</td>
+                  <td contenteditable="false">4 years old</td>
                 </tr>
               </tbody>
             </table>
+            <div class="button-info-edit">
+              <button
+                type="button"
+                class="infoBtn btn-primary btn-lg gradient"
+                id="save-info"
+                style="text-align: left; margin-left: 5px"
+                onclick="saveData()"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="infoBtn btn-primary btn-lg gradient"
+                id="cancel-info"
+                style="text-align: left"
+                onclick="cancelEdit()"
+              >
+                Cancel
+              </button>
+            </div>
           </div>
-          <div class="table-2">
-            <table class="custom-table">
-              <thead>
-                <tr class="header-row">
-                  <th style="font-size: 13px; padding: 5px">Pet's List</th>
-                  <th class="btn-header">
-                    <button
-                      type="button"
-                      class="new-pet btn-primary btn-lg gradient"
-                      id="addPetBtn"
-                    >
-                      + New Pet
-                    </button>
-                    <div id="petDialog" class="dialog">
-                      <div class="dialog-content">
-                        <div id="petForm" class="pet-form">
-                          <h3>Add Pet</h3>
-                          <form id="petForm">
-                            <label for="petId">Pet ID:</label>
-                            <input type="number" id="clientId" required />
-                            <label for="petName">Pet Name: </label>
-                            <input type="text" id="firstName" required />
-                            <label for="species">Species</label>
-                            <input type="text" id="species" required />
-                            <label for="birt">Date of Birth:</label>
-                            <input type="date" id="birt" required />
-                            <label>Gender:</label>
+          <div class="div-two">
+            <button
+              type="button"
+              class="new-client btn-primary btn-lg gradient"
+              id="update"
+              onclick="showOtherButton()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 0 512 512"
+                fill="black"
+              >
+                <path
+                  d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"
+                />
+              </svg>
+              Update Info.
+            </button>
+            <button
+              type="button "
+              class="consult btn-primary btn-lg gradient"
+              id="consult"
+              onclick="showConsult()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 50 50"
+                fill="none"
+              >
+                <path
+                  d="M13.8325 0H10.9556C10.5356 0 10.1953 0.340429 10.1953 0.76035V1.82304H9.36266C6.15622 1.82304 3.54773 4.43153 3.54773 7.63797V13.5642C3.54773 13.9842 3.88816 14.3246 4.30808 14.3246C4.7281 14.3246 5.06843 13.9842 5.06843 13.5642V7.63807C5.06843 5.2702 6.99489 3.34394 9.36256 3.34394H10.1952V4.9536C10.1952 5.37352 10.5355 5.71395 10.9555 5.71395H13.8324C14.2524 5.71395 14.5927 5.37352 14.5927 4.9536V0.76035C14.5929 0.340429 14.2526 0 13.8325 0ZM13.0722 4.19306H11.7162V1.5208H13.0722V4.19306Z"
+                  fill="black"
+                />
+                <path
+                  d="M27.3553 1.82314H26.5095V0.76035C26.5095 0.340429 26.1691 0 25.7491 0H22.8723C22.4523 0 22.112 0.340429 22.112 0.76035V4.95341C22.112 5.37333 22.4523 5.71376 22.8723 5.71376H25.7491C26.1691 5.71376 26.5095 5.37333 26.5095 4.95341V3.34374H27.3553C29.7231 3.34374 31.6495 5.27011 31.6495 7.63788V16.634C31.6495 23.9623 25.6873 29.9243 18.359 29.9243C14.809 29.9243 11.4715 28.5418 8.96134 26.0317C6.45119 23.5215 5.06867 20.1839 5.06867 16.634V16.0563C5.06867 15.6364 4.72834 15.296 4.30832 15.296C3.8883 15.296 3.54797 15.6364 3.54797 16.0563V16.634C3.54797 20.5902 5.0885 24.3096 7.88605 27.1071C10.4538 29.6747 13.7984 31.1826 17.3896 31.413V35.0473C17.3896 35.4672 17.73 35.8076 18.15 35.8076C18.57 35.8076 18.9103 35.4672 18.9103 35.0473V31.4339C26.8226 31.1427 33.1702 24.6163 33.1702 16.6341V7.63807C33.1703 4.43163 30.5617 1.82314 27.3553 1.82314ZM24.9886 4.19306H23.6325V1.5208H24.9886V4.19306Z"
+                  fill="black"
+                />
+                <path
+                  d="M40.7431 14.05C39.1604 14.05 37.8728 15.3376 37.8728 16.9204C37.8728 18.5031 39.1604 19.7907 40.7431 19.7907C42.3257 19.7907 43.6134 18.5031 43.6134 16.9204C43.6134 15.3376 42.3258 14.05 40.7431 14.05ZM40.7431 18.2699C39.999 18.2699 39.3936 17.6645 39.3936 16.9204C39.3936 16.1762 39.9991 15.5708 40.7431 15.5708C41.4872 15.5708 42.0926 16.1762 42.0926 16.9204C42.0926 17.6644 41.4872 18.2699 40.7431 18.2699Z"
+                  fill="black"
+                />
+                <path
+                  d="M24.2125 20.2141C23.7439 18.1025 21.745 15.0476 19.3565 15.0476H19.321C16.9326 15.0476 14.9338 18.1026 14.4651 20.2142C14.0393 22.1334 14.9379 22.7816 15.3441 22.9711C16.1443 23.3447 17.0779 23.4098 18.0579 23.1616C18.469 23.0575 18.894 23.0046 19.321 23.0046H19.3412H19.3568C19.7838 23.0046 20.2088 23.0575 20.6199 23.1616C21.0095 23.2602 21.3943 23.3102 21.7635 23.3102H21.7636C22.3233 23.3102 22.8515 23.196 23.3336 22.971C23.7397 22.7815 24.6382 22.1333 24.2125 20.2141ZM22.6904 21.5932C22.2087 21.8181 21.6298 21.8488 20.9933 21.6875C20.4601 21.5525 19.9095 21.484 19.3568 21.484H19.3412H19.321C18.7682 21.484 18.2175 21.5526 17.6844 21.6875C17.0478 21.8489 16.469 21.818 15.9875 21.5932C15.902 21.5533 15.8033 21.2046 15.9499 20.5438C16.3386 18.7914 18.004 16.5685 19.3212 16.5685H19.3567C20.6738 16.5685 22.339 18.7914 22.728 20.5437C22.8745 21.2044 22.7758 21.5533 22.6904 21.5932Z"
+                  fill="black"
+                />
+                <path
+                  d="M18.7726 9.60644C18.2718 8.49385 17.1596 7.7749 15.9392
+                7.7749C15.4984 7.7749 15.07 7.86729 14.6655 8.04922C13.909
+                8.38965 13.3304 9.00449 13.0362 9.78027C12.7422 10.556 12.7678
+                11.3999 13.1083 12.1563C13.6692 13.4024 15.5466 15.2865 17.0979
+                15.2866H17.0981C17.3671 15.2866 17.6212 15.2337 17.8529
+                15.1294C18.6496 14.7707 19.1321 13.8246 19.2115 12.4652C19.2708
+                11.452 19.0985 10.33 18.7726 9.60644ZM17.6933 12.3765C17.6457
+                13.1928 17.4191 13.6568 17.2286 13.7427C17.1939 13.7583 17.1513
+                13.7659 17.0981 13.7659H17.098C16.3421 13.7659 14.9014 12.4344
+                14.4951 11.5322C14.3214 11.1461 14.3084 10.7153 14.4584
+                10.3194C14.6083 9.92353 14.9038 9.60976 15.2898 9.43593C15.4966
+                9.34287 15.715 9.2956 15.9392 9.2956C16.5624 9.2956 17.1303
+                9.66259 17.386 10.2307C17.5704 10.6405 17.7453 11.4867 17.6933
+                12.3765Z"
+                  fill="black"
+                />
+                <path
+                  d="M14.8602 15.5111C14.4331 14.7356 13.7826 13.9859 13.203 13.6011C12.7474 13.2986 12.2184 13.1387 11.6733 13.1387C10.742 13.1387 9.87904 13.6013 9.36459 14.3764C8.52016 15.6483 8.86791 17.3703 10.1398 18.2148C10.851 18.687 12.0865 19.0298 13.0775 19.0299C13.0777 19.0299 13.0778 19.0299 13.0778 19.0299C14.2682 19.0297 14.827 18.5648 15.0859 18.1749C15.5236 17.5159 15.4434 16.5699 14.8602 15.5111ZM13.8191 17.3337C13.7867 17.3824 13.5906 17.509 13.0779 17.509H13.0777C12.3047 17.5089 11.3874 17.2176 10.981 16.9478C10.4077 16.5672 10.2508 15.7908 10.6315 15.2175C10.8634 14.8681 11.2529 14.6595 11.6732 14.6595C11.9181 14.6595 12.1563 14.7316 12.3617 14.8681C12.6813 15.0803 13.1846 15.6214 13.5279 16.2448C13.8754 16.8754 13.8741 17.2506 13.8191 17.3337Z"
+                  fill="black"
+                />
+                <path
+                  d="M25.6413 9.78037C25.3472 9.00459 24.7686 8.38975 24.0121 8.04922C23.6078 7.86719 23.1791 7.7749 22.7383 7.7749C21.5178 7.7749 20.4056 8.49385 19.9048 9.60644C19.2483 11.0649 19.0954 14.351 20.8245 15.1295C21.0562 15.2338 21.3103 15.2867 21.5793 15.2867C23.1306 15.2867 25.008 13.4026 25.5691 12.1565C25.9097 11.4001 25.9354 10.5561 25.6413 9.78037ZM24.1826 11.532C23.7763 12.4343 22.3355 13.7657 21.5796 13.7657C21.5265 13.7657 21.4837 13.7581 21.4491 13.7425C21.2586 13.6568 21.0321 13.1927 20.9844 12.3763C20.9324 11.4865 21.1073 10.6402 21.2917 10.2305C21.5474 9.6625 22.1154 9.2955 22.7386 9.2955C22.9626 9.2955 23.1812 9.34277 23.3879 9.43584C23.7741 9.60957 24.0695 9.92353 24.2195 10.3193C24.3694 10.7153 24.3564 11.146 24.1826 11.532Z"
+                  fill="black"
+                />
+                <path
+                  d="M29.3129 14.3763C28.7984 13.6013 27.9354 13.1387 27.0041 13.1387C26.459 13.1387 25.9299 13.2985 25.4744 13.6011C24.302 14.3794 22.6565 16.7664 23.5914 18.1749C23.8504 18.5648 24.4089 19.0298 25.5997 19.0298C26.5906 19.0298 27.8263 18.687 28.5375 18.2147C29.8096 17.3702 30.1573 15.6483 29.3129 14.3763ZM27.6964 16.9476C27.2898 17.2176 26.3727 17.5089 25.5997 17.5089C25.0869 17.5089 24.8907 17.3823 24.8583 17.3336C24.8032 17.2507 24.802 16.8753 25.1493 16.2446C25.4927 15.6211 25.9959 15.0801 26.3156 14.8679C26.521 14.7314 26.7592 14.6593 27.0041 14.6593C27.4245 14.6593 27.8139 14.868 28.0458 15.2173C28.4266 15.7907 28.2697 16.5671 27.6964 16.9476Z"
+                  fill="black"
+                />
+                <path
+                  d="M40.7431 11.2114C37.5951 11.2114 35.0341 13.7726
+                35.0341 16.9205C35.0341 19.8106 37.1932 22.2043 39.9828
+                22.5775V37.9431C39.9828 43.7528 35.2563 48.4792 29.4466
+                48.4792C23.6369 48.4792 18.9105 43.7528 18.9105
+                37.9431V37.5398C18.9105 37.1199 18.5701 36.7794 18.1501
+                36.7794C17.7301 36.7794 17.3898 37.1199 17.3898
+                37.5398V37.9431C17.3898 44.5913 22.7985 50 29.4468 50C36.095 50
+                41.5037 44.5913 41.5037 37.9431V22.5774C44.2933 22.2043 46.4524
+                19.8105 46.4524 16.9205C46.4522 13.7725 43.8912 11.2114 40.7431
+                11.2114ZM40.7431 21.1088C38.4337 21.1088 36.5549 19.2299 36.5549
+                16.9205C36.5549 14.6111 38.4338 12.7322 40.7431 12.7322C43.0525
+                12.7322 44.9314 14.6111 44.9314 16.9205C44.9314 19.2299 43.0526
+                21.1088 40.7431 21.1088Z"
+                  fill="black"
+                />
+              </svg>
+              Consultation/Other Treatments
+            </button>
+            <button
+              type="button"
+              class="new-client btn-primary btn-lg gradient"
+              id="records"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 50 50"
+                fill="none"
+              >
+                <path
+                  d="M33.4779 20.7328C36.2477 20.7327 38.6077 20.7326 40.4916 20.9457C40.8114 20.9819 41.1302 21.0255 41.4464 21.0786C42.555 21.2646 43.6348 21.5692 44.6337 22.0963V20.3244C44.6337 18.4308 44.6339 16.8598 44.456 15.6073C44.2685 14.2853 43.8596 13.1135 42.8821 12.1508C42.7227 11.9937 42.5544 11.8447 42.3781 11.7041C41.3119 10.8545 40.0337 10.507 38.5869 10.3458C37.1929 10.1906 35.4369 10.1906 33.2844 10.1906H32.5494C30.5033 10.1906 29.7698 10.1787 29.1054 10.0109C28.7152 9.91238 28.3406 9.77473 27.9891 9.60146C27.3969 9.30956 26.8808 8.86986 25.4316 7.58592L24.4439 6.71084C24.0294 6.34336 23.7462 6.09254 23.4429 5.86973C22.1414 4.91398 20.5569 4.33592 18.8979 4.19846C18.5115 4.16646 18.1173 4.16648 17.5272 4.16654L17.2847 4.16652C15.95 4.16629 15.0691 4.16615 14.3042 4.294C10.9608 4.8529 8.25715 7.19031 7.59862 10.2826C7.44879 10.9862 7.44902 11.7922 7.44937 12.9551L7.44942 22.0963C8.44837 21.5692 9.52825 21.2646 10.6366 21.0786C10.953 21.0255 11.2717 20.9819 11.5915 20.9457C13.4754 20.7326 15.8355 20.7327 18.6053 20.7328H33.4779Z"
+                  fill="black"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.99565 26.6226C5.72442 28.5839 6.24908 31.311 7.2984 36.7649C8.05375 40.6912 8.43144 42.6543 9.74006 43.957C10.0796 44.2949 10.4595 44.5945 10.8721 44.8497C12.4624 45.8334 14.5737 45.8334 18.7964 45.8334H33.2869C37.5096 45.8334 39.621 45.8334 41.2113 44.8497C41.624 44.5945 42.0037 44.2949 42.3433 43.957C43.6519 42.6543 44.0296 40.6912 44.785 36.7649C45.8342 31.311 46.359 28.5839 45.0877 26.6226C44.7633 26.1222 44.3631 25.6691 43.9002 25.278C42.0856 23.7451 39.1527 23.7451 33.2869 23.7451H18.7964C12.9306 23.7451 9.99767 23.7451 8.18317 25.278C7.72013 25.6691 7.32006 26.1222 6.99565 26.6226ZM20.1983 35.7932C20.1983 34.9616 20.9117 34.2872 21.7919 34.2872H30.2912C31.1712 34.2872 31.8848 34.9616 31.8848 35.7932C31.8848 36.6251 31.1712 37.2993 30.2912 37.2993H21.7919C20.9117 37.2993 20.1983 36.6251 20.1983 35.7932Z"
+                  fill="black"
+                />
+              </svg>
+              Records
+            </button>
+          </div>
+        </div>
+        <div class="separator2"></div>
 
-                            <div class="radio-container">
-                              <label for="male">Male</label>
-                              <input
-                                type="radio"
-                                id="male"
-                                name="gender"
-                                value="male"
-                              />
-
-                              <label for="female">Female</label>
-                              <input
-                                type="radio"
-                                id="female"
-                                name="gender"
-                                value="female"
-                              />
-                            </div>
-                            <br />
-                            <button type="submit" id="savePet">Add</button>
-                            <button type="button" id="closeDialog">
-                              Close
-                            </button>
-                          </form>
-                        </div>
-                      </div>
+        <div class="pet-consultation-form" id="pet-consultation-form">
+          <h3 style="font-family: Poppins">Client Code: 001</h3>
+          <table class="custom-table">
+            <thead>
+              <tr class="header-row-consult">
+                <th class="button-consult-header">
+                  <button class="button-pet-consult">New</button>
+                </th>
+                <th class="button-pet-consult">
+                  <button class="button-pet-consult">Save</button>
+                </th>
+                <th class="button-pet-consult">
+                  <button class="button-pet-consult">Refresh</button>
+                </th>
+                <th class="button-pet-consult">
+                  <button class="button-pet-consult">Cancel</button>
+                </th>
+                <th class="button-pet-consult">
+                  <div class="dropdown">
+                    <button class="dropbtn">Reports</button>
+                    <div class="dropdown-content">
+                      <a href="#">Medical Report</a>
+                      <a href="#">Presciption Report</a>
                     </div>
-                  </th>
-                </tr>
-              </thead>
-            </table>
-            <table class="custom-table" id="filtertable">
-              <tbody class="table-body">
-                <tr class="sub-header">
-                  <td>Pet Name</td>
-                  <td>Species</td>
-                  <td>Actions</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pagination-container">
-              <div class="pagination">
-                <button
-                  class="prev-page-button btn btn-primary btn-lg"
-                  id="prevPage"
+                  </div>
+                </th>
+                <th
+                  class="icon-header"
+                  style="display: flex; flex-direction: row-reverse"
                 >
-                  Previous
-                </button>
-                <span id="pageInfo">Page 1 of 1</span>
-                <button
-                  class="next-page-button btn btn-primary btn-lg"
-                  id="nextPage"
-                >
-                  Next
-                </button>
+                  <button
+                    type="button"
+                    class="back-button btn-primary btn-lg gradient"
+                    id="back"
+                    onclick="backCLick()"
+                  >
+                    Back
+                  </button>
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <div class="separator2"></div>
+          <h3 style="font-family: Poppins">&nbsp;&nbsp;PATIENT INFORMATION</h3>
+          <div class="for-two-table">
+            <div class="table-1">
+              <table class="custom-table">
+                <tbody>
+                  <tr>
+                    <td>
+                      Owner Name: <br />
+                      <input
+                        type="text"
+                        id="ownerName"
+                        value="Shirleen Mae C. Cal"
+                        style="width: 300px"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Pet Name: <br />
+                      <input
+                        type="text"
+                        id="petName"
+                        value="Meyli"
+                        style="width: 300px"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Date of Diagnose: <br />
+                      <input
+                        type="date"
+                        id="dateDiagnose"
+                        value="2001-10-07"
+                        style="width: 300px; height: 30px"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Type <br />
+                      <input
+                        type="text"
+                        id="typeDiagnose"
+                        value="Walk In"
+                        style="width: 300px"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-1">
+              <table class="custom-table">
+                <tbody>
+                  <tr>
+                    <td>
+                      Breed/Species: <br />
+                      <input
+                        type="text"
+                        id="breed"
+                        value="Chow Chow"
+                        style="width: 300px"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Gender <br />
+                      <select
+                        name="gender"
+                        id="gender"
+                        style="width: 300px; height: 30px"
+                      >
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 68px">
+                      Date of Birth: <br />
+                      <input
+                        type="date"
+                        id="dateBirth"
+                        value="2019-10-07"
+                        style="width: 300px"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="separator2"></div>
+          <table class="table-laboratory">
+            <thead class="head-laboratory">
+              <tr class="header-row-consult">
+                <th>
+                  <button
+                    class="button-pet-consult"
+                    id="exam"
+                    onclick="clinicalExamShow()"
+                  >
+                    Clinical Exam
+                  </button>
+                </th>
+                <th>
+                  <button class="button-pet-consult" id="laboratory">
+                    Laboratory
+                  </button>
+                </th>
+                <th>
+                  <button class="button-pet-consult" id="plan">Plan</button>
+                </th>
+                <th>
+                  <button class="button-pet-consult" id="diagnosis">
+                    Diagnosis
+                  </button>
+                </th>
+                <th>
+                  <button class="button-pet-consult" id="treatment">
+                    Treatment
+                  </button>
+                </th>
+                <th>
+                  <button class="button-pet-consult" id="presciption">
+                    Presciption
+                  </button>
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <div class="separator2"></div>
+          <div id="div-hidden2">
+            <label class="fill-the-template"> Fill the Template</label>
+            <div class="div-input-label">
+              <div class="div-label">
+                <label>Upload Picture </label>
+                <label>Respiratory Rate (bpm) : </label>
+                <label> Weight (kg) : </label>
+                <label>Length (cm) : </label>
+                <label>CRT : </label>
+                <label>BCS : </label>
+                <label>Lymph Nodes: </label>
+                <label>Temperature (bpm) : </label>
               </div>
+              <div class="div-input">
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+                <input type="text" /><br />
+              </div>
+            </div>
+          </div>
+          <div class="separator2"></div>
+          <button class="fill-the-template" style="position: flex">
+            + Add
+          </button>
+          <div class="for-two-table">
+            <div class="table-1">
+              <table class="custom-table">
+                <tbody>
+                  <tr>
+                    <td style="font-family: Poppins; font-size: 20px">
+                      Upload Picture
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="browse-div">
+                        <input
+                          type="file"
+                          id="file-input"
+                          style="display: none"
+                        />
+                        <button
+                          class="browse2"
+                          id="browse"
+                          onclick="browseImage()"
+                          style="display: block"
+                        >
+                          Choose
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-1">
+              <table class="custom-table">
+                <tbody>
+                  <tr>
+                    <td style="font-family: Poppins; font-size: 20px">
+                      Interpretation
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="input-interpret" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

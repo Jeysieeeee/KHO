@@ -78,6 +78,9 @@ body {
 .separator {
   margin: 50px;
 }
+.separator2 {
+  margin: 20px;
+}
 
 .form-control {
   height: 20px;
@@ -163,8 +166,8 @@ body {
 
 .table-1,
 .table-2 {
-  width: 100%; /* Adjust the width as needed */
-  margin-right: 5px; /* Add some spacing between the tables */
+  width: 100%;
+  margin-right: 5px;
 }
 .custom-table {
   width: 100%;
@@ -172,21 +175,35 @@ body {
   border: 1px solid #ddd;
   color: #401500;
 }
-
-.icon-header {
-  text-align: left;
-  width: 40px; /* Adjust the width as needed */
+.custom-table2 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  color: #401500;
 }
-
 .icon-header i {
   color: #555;
   cursor: pointer;
   fill: #f6505ede;
+  align-items: flex-end;
+}
+.editClientInfo,
+.downloadTableButton,
+.downloadPetInfo {
+  border: 0px;
+  background-color: white;
+}
+.button-container {
+  display: flex; /* Display the buttons in a row */
+  justify-content: flex-end; /* Align buttons to the right */
+  padding-right: 10px;
 }
 .header-row {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
+.button-consult-header {
+  text-align: center;
+}
 tbody td {
   padding: 7px;
   text-align: left;
@@ -218,26 +235,18 @@ tbody td {
   font-weight: 500;
   line-height: 21px;
   letter-spacing: -0.01em;
-  text-align: right;
+  padding: 10px;
   color: grey;
   border-width: 1px;
+  text-align: center;
 }
 
-#filtertable td:nth-child(1),
-#filtertable td:nth-child(2),
-#filtertable td:nth-child(3) {
-  text-align: center;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 29.9px */
-}
 .view {
   border: 1px solid #00b087;
   background: rgba(22, 192, 152, 0.38);
 }
 .view2 {
+  margin: 10px;
   border: 1px solid #f6505e;
   background: rgba(246, 80, 94, 0.87);
 }
@@ -248,7 +257,6 @@ tbody td {
   height: fit-content;
 }
 
-/* Style for the next page button */
 .next-page-button {
   background-color: #337ab7;
   color: #fff;
@@ -277,25 +285,26 @@ tbody td {
   z-index: 1;
 }
 /* Form styles */
-.client-form {
+.pet-form {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin-top: 10px;
+  align-items: flex-start;
   display: none; /* Initially hidden */
 }
 
-.client-form h3 {
+.pet-form h3 {
   color: black;
 }
 
-.client-form label {
+.pet-form label {
   display: block;
   color: black;
   margin-top: 10px;
 }
 
-.client-form input {
+.pet-form input {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
@@ -305,12 +314,12 @@ tbody td {
   background-color: #f6505ede;
 }
 
-.client-form input[type="radio"] {
+.pet-form input[type="radio"] {
   margin-right: 5px;
   color: black;
 }
 
-.client-form button {
+.pet-form button {
   background-color: #f6505ede;
   color: white;
   border: none;
@@ -324,7 +333,7 @@ tbody td {
 .show-form {
   display: block;
 }
-#clientDialog {
+#petDialog {
   z-index: 1000;
 }
 
@@ -389,4 +398,254 @@ tbody td {
 }
 .title-name {
   display: inline;
+}
+.image-container {
+  display: flex;
+  padding: 0px 7px 41px 6px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-div-of-3div {
+  display: flex;
+}
+.div-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 5px; /* Adjust the width as needed */
+  /* Add some spacing between the tables */
+}
+.div-two {
+  margin-right: 10px;
+  margin-left: 25px;
+  flex-direction: column;
+}
+
+.new-client {
+  font-family: Inter;
+  padding-top: 8px;
+  font-size: 12px;
+  background-color: white;
+  border-color: gray;
+  font-style: normal;
+  color: black;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+}
+.new-client svg {
+  margin-right: 10px;
+}
+
+.new-client span {
+  text-align: left;
+}
+.consult {
+  font-family: Inter;
+  padding: 8px;
+  font-size: 12px;
+  font-style: normal;
+  background-color: white;
+  border-color: gray;
+  color: black;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+}
+.consult svg {
+  margin-right: 5px;
+}
+
+.consult span {
+  text-align: left;
+}
+.main-div-of-3div {
+  border: 1px solid #100f0f; /* Add a border with a desired color */
+  padding: 20px;
+}
+.button-info-edit {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 10px;
+  text-align: left;
+  align-items: self-end;
+  padding: 5px;
+}
+
+.infoBtn {
+  display: none;
+  margin-top: 10px;
+}
+.update-image {
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  background-color: gray;
+  display: none;
+}
+.browse {
+  border: gray;
+  display: none;
+}
+.browse-div {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  gap: 5px;
+}
+.back-button {
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 80, 94, 0.87) 0%,
+    rgba(246, 80, 94, 0.76) 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+}
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Poppins;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 12px;
+  display: block;
+  padding: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.button-pet-consult {
+  font-family: Poppins;
+  font-size: 14px;
+  background-color: white;
+  border: white;
+}
+.pet-consultation-form {
+  display: none;
+}
+.table-laboratory {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #020202;
+  color: #401500;
+}
+
+.table-laboratory th {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 4px;
+}
+
+.fill-the-template {
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 80, 94, 0.87) 0%,
+    rgba(246, 80, 94, 0.76) 100%
+  );
+  border-color: rgba(246, 80, 94, 0.76) 100%;
+  margin: 10px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.div-label {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  gap: 18px;
+  padding-left: 20px;
+}
+.div-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-input input {
+  padding: 3px;
+  width: 300px;
+}
+.div-input-label {
+  border: 2px;
+  color: #555;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  width: 70%;
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.browse2 {
+  display: flex;
+  width: 478px;
+  height: 178px;
+  padding: 39px 127px 40px 127px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  border-width: 0px;
+}
+.input-interpret {
+  width: 782px;
+  height: 163px;
+  flex-shrink: 0;
 }
